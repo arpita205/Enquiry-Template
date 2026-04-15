@@ -1,0 +1,23 @@
+{
+  "name": "xecurra-rfq-email-sender",
+  "version": "1.0.0",
+  "description": "Send RFQ emails via Microsoft Graph API or SMTP for Xecurra Infinity LLP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "send-rfq": "node sendRFQ.js",
+    "test": "node sendRFQ.js --test"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^2.9.2",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^8.0.5",
+    "winston": "^3.13.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Xecurra Infinity LLP",
+  "license": "UNLICENSED"
+}
